@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateHidden"
+    android:background="@drawable/fundo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL:"
+            android:textSize="30px"
+            android:textColor="@color/amarelo"/>
+
+        <EditText
+            android:id="@+id/urlcompleta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/amarelo"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonfrente"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_frente"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/buttonesquerda"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_esquerda"/>
+        <Button
+            android:id="@+id/invisivel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/buttondireita"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_direita" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonre"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_re"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
